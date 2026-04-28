@@ -1,0 +1,60 @@
+╔════════════════════════════════════════════════════════════╗
+║  🚀 CRISIS MANAGEMENT SYSTEM - FRONTEND                   ║
+║     React + Vite + Zustand + Socket.io                    ║
+╚════════════════════════════════════════════════════════════╝
+
+INSTALACIÓN RÁPIDA
+═══════════════════════════════════════════════════════════
+
+1. INSTALAR DEPENDENCIAS
+   npm install
+
+2. ASEGURAR CONEXIÓN CON BACKEND
+   Edita: src/store/crisisStore.js
+   Verifica: const SOCKET_URL = 'http://localhost:3000';
+
+3. EJECUTAR EN DESARROLLO
+   npm run dev
+
+4. ABRIR EN NAVEGADOR
+   http://localhost:5173
+
+═══════════════════════════════════════════════════════════
+
+ESTRUCTURA DE RUTAS
+═══════════════════════════════════════════════════════════
+
+/                    → Lobby (Registro y rol)
+/ops/monitor         → Panel de Monitor (Lectura)
+/ops/bridge          → Consola de Técnico (Acciones)
+
+═══════════════════════════════════════════════════════════
+
+FLUJO DEL JUEGO
+═══════════════════════════════════════════════════════════
+
+1. Monitor: Ve temperatura, ancho de banda, DDoS y CÓDIGO
+2. Técnico: Ingresa el código y presiona botones
+3. Servidor: Valida y ejecuta las acciones
+4. Monitor: Ve las métricas cambiar en tiempo real
+
+═══════════════════════════════════════════════════════════
+
+COMPILAR PARA PRODUCCIÓN
+═══════════════════════════════════════════════════════════
+
+npm run build
+
+Los archivos estará en: dist/
+
+═══════════════════════════════════════════════════════════
+
+NOTAS IMPORTANTES
+═══════════════════════════════════════════════════════════
+
+✓ El backend debe estar corriendo en localhost:3000
+✓ Monitor y Técnico deben usar la MISMA sala
+✓ Socket.io se conecta automáticamente
+✓ Zustand sincroniza el estado globalmente
+
+═══════════════════════════════════════════════════════════
